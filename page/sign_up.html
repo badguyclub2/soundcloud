@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign_Up</title>
+</head>
+<body>
+    <form action="completed.html" autocomplete="on">
+        <fieldset>
+            <legend>회원가입</legend>
+            <div>
+                <label for="id">ID</label>
+                <input type="text" name="id" required>
+            </div>
+            <div>
+                <label for="password">비밀번호</label>
+                <input type="password" 
+                name="password" 
+                placeholder="영문, 특수문자, 숫자 조합"
+                size="12"
+                required>
+            </div>
+            <div>
+                <label for="password_check">비밀번호 확인</label>
+                <input type="password" 
+                name="password_check" 
+                size="12"
+                required>
+            </div>
+            <div>
+                <label for="selectPlace">이름</label>
+                <input type="text" name="name" placeholder="홍길동" required>
+            </div>
+            <div>
+                <label for="sex">성별</label>
+                <input type="radio" name="sex_select" value="man">남자
+                <input type="radio" name="sex_select" value="woman">여자
+            </div>
+            <div>
+                <label for="selectPlace">이메일</label>
+                <input type="text" name="e-mail" required>
+            </div>
+            <div>
+                <label for="birthDate">생년월일</label>
+                <input type="date" name="birthDate" required>
+            </div>
+            <div>
+                <label for="selectPlace">전화번호</label>
+                <input
+                    type="text"
+                    name="number"
+                    placeholder="01012345678"
+                    required
+                >
+                <div><button type="submit" onclick="complete">회원가입 완료</button></div>
+        </fieldset>
+    </form>
+</body>
+</html>
